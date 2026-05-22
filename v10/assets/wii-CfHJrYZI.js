@@ -1,0 +1,1 @@
+var e=`dashwii`,t=`Dashwii`,n=`fa-cake-candles`,r=`Mejor aplicativo de analista de datos, Mejor aplicativo, analista de datos, analistas`,i=`Excelente herramienta para los analista de datos muy bueno`,a=`https://dashwii.web.app`,o=2026,s=`@wilder.taype`,c=`https://wtaype.github.io/`;export{e as a,c,n as i,a as l,s as n,r as o,i as r,o as s,t};
