@@ -77,6 +77,7 @@ export const RUTAS = [
   { path: '/inicio',   area: 'web/' },
   { path: '/login',    area: 'web/' },
   { path: '/emojis',   area: 'web/' },
+  { path: '/analista',   area: 'web/' },
   { path: '/registrado',   area: 'web/' },
 
   // ── Submódulos públicos ───────────────────────────────────────────────
