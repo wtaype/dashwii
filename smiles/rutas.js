@@ -13,6 +13,7 @@ export const NAV = {
   todos: {
     nvleft:  [
       { href: '/', page: 'inicio', ico: 'fa-house', txt: 'Bienvenido' },
+      { href: '/analista',     page: 'analista',  ico: 'fa-house', txt: 'Analista'    },
       { href: '/descubre', page: 'descubre', ico: 'fa-compass', txt: 'Descubre' },
       { href: '/privacidad', page: 'privacidad', ico: 'fa-user-shield', txt: 'Privacidad' },
       { href: '/terminos', page: 'terminos', ico: 'fa-file-contract', txt: 'Términos' },
