@@ -13,7 +13,11 @@ export const NAV = {
   todos: {
     nvleft:  [
       { href: '/', page: 'inicio', ico: 'fa-house', txt: 'Bienvenido' },
-      { href: '/analista',     page: 'analista',  ico: 'fa-house', txt: 'Analista'    },
+      { href: '/analista',  page: 'analista',  ico: 'fa-chart-pie', txt: 'Analista'    },
+      { href: '/tablero',   page: 'tablero',   ico: 'fa-grip',      txt: 'Tablero'    },
+      { href: '/productos', page: 'productos', ico: 'fa-box',       txt: 'Productos'  },
+      { href: '/meta',      page: 'meta',      ico: 'fa-bullseye',  txt: 'Meta'       },
+      { href: '/ranking',   page: 'ranking',   ico: 'fa-trophy',    txt: 'Ranking'    },
       { href: '/descubre', page: 'descubre', ico: 'fa-compass', txt: 'Descubre' },
       { href: '/privacidad', page: 'privacidad', ico: 'fa-user-shield', txt: 'Privacidad' },
       { href: '/terminos', page: 'terminos', ico: 'fa-file-contract', txt: 'Términos' },
@@ -79,6 +83,10 @@ export const RUTAS = [
   { path: '/login',    area: 'web/' },
   { path: '/emojis',   area: 'web/' },
   { path: '/analista',   area: 'web/' },
+  { path: '/tablero',    area: 'web/' },
+  { path: '/productos',  area: 'web/' },
+  { path: '/meta',       area: 'web/' },
+  { path: '/ranking',    area: 'web/' },
   { path: '/registrado',   area: 'web/' },
 
   // ── Submódulos públicos ───────────────────────────────────────────────

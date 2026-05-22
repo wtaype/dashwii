@@ -1,0 +1,231 @@
+.me_page {
+  padding: 3vh 2vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 60px);
+}
+
+.me_hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4vh;
+  flex-wrap: wrap;
+  gap: 2vh;
+}
+
+.me_hero_left {
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+
+.me_hero_icon {
+  width: 5.5vh;
+  height: 5.5vh;
+  border-radius: 1.2vh;
+  background: var(--bg4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fz_l1);
+  color: var(--mco);
+}
+
+.me_hero_txt h1 {
+  font-size: var(--fz_l2);
+  font-weight: 800;
+  color: var(--tx1);
+  line-height: 1.2;
+}
+
+.me_hero_txt p {
+  font-size: var(--fz_s4);
+  color: var(--tx3);
+  margin: 0;
+  font-weight: 500;
+}
+
+.me_big_ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 4vh 2vh;
+}
+
+.me_ring_wrap {
+  position: relative;
+  width: 22vh;
+  height: 22vh;
+}
+
+.me_ring_svg {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.me_ring_bg {
+  fill: none;
+  stroke: var(--bg5);
+  stroke-width: 8;
+}
+
+.me_ring_fg {
+  fill: none;
+  stroke: var(--mco);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.me_ring_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.me_ring_pct {
+  font-size: var(--fz_x2);
+  font-weight: 900;
+  color: var(--tx1);
+  line-height: 1;
+}
+
+.me_ring_lbl {
+  font-size: var(--fz_s3);
+  color: var(--tx3);
+  font-weight: 600;
+}
+
+.me_stats_row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2vh;
+  margin-bottom: 4vh;
+}
+
+.me_stat_card {
+  background: var(--wb);
+  border: 1px solid var(--brd);
+  border-radius: 1.2vh;
+  padding: 2vh 2.5vh;
+  text-align: center;
+  transition: all var(--tr_f);
+}
+
+.me_stat_card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
+
+.me_stat_val {
+  font-size: var(--fz_l2);
+  font-weight: 900;
+  color: var(--tx1);
+  line-height: 1.2;
+}
+
+.me_stat_lbl {
+  font-size: var(--fz_s3);
+  color: var(--tx3);
+  font-weight: 600;
+  margin-top: 0.5vh;
+}
+
+.me_stat_ico {
+  font-size: var(--fz_m4);
+  color: var(--mco);
+  margin-bottom: 0.8vh;
+}
+
+.me_chart_card {
+  background: var(--wb);
+  border: 1px solid var(--brd);
+  border-radius: 1.2vh;
+  padding: 2.5vh;
+  margin-bottom: 2vh;
+}
+
+.me_chart_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.me_chart_title {
+  font-size: var(--fz_m1);
+  font-weight: 700;
+  color: var(--tx1);
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+
+.me_chart_title i {
+  color: var(--mco);
+}
+
+.me_chart_wrap {
+  position: relative;
+  width: 100%;
+  min-height: 260px;
+}
+
+.me_chart_wrap canvas {
+  width: 100% !important;
+}
+
+.me_daily_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1vh;
+}
+
+.me_daily_table th {
+  text-align: left;
+  padding: 1vh 1.5vh;
+  font-size: var(--fz_s3);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--tx3);
+  background: var(--bg);
+  border-bottom: 1px solid var(--brd);
+}
+
+.me_daily_table td {
+  padding: 1vh 1.5vh;
+  font-size: var(--fz_s4);
+  color: var(--tx1);
+  border-bottom: 1px solid var(--brd);
+}
+
+.me_daily_table tr:hover td {
+  background: var(--bg4);
+}
+
+.me_bar_tiny {
+  height: 1.8vh;
+  border-radius: 0.6vh;
+  background: var(--bg5);
+  overflow: hidden;
+  min-width: 80px;
+}
+
+.me_bar_tiny_fill {
+  height: 100%;
+  border-radius: 0.6vh;
+  background: var(--mco);
+  transition: width 1s ease;
+}
+
+@media (max-width: 768px) {
+  .me_page { padding: 2vh 3vw; }
+  .me_hero { flex-direction: column; align-items: flex-start; }
+}
